@@ -359,7 +359,7 @@ h1.pushed {
 }
 
 .contact_us_form>.left_pane, .contact_us_form>.main_pane {
-	padding: 200px 50px 100%;
+	padding: 0 50px 100%;
 	margin-bottom: -100%;
 }
 
