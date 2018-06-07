@@ -2,7 +2,7 @@
 /*Site Classes*/
 @font-face {
 	font-family: Bitter;
-	src: url('font/bitter-regular.otf');
+	src: url('//font/bitter-regular.otf');
 }
 html{
 	font-family: Bitter, Helvetica, Arial, sans-serif;
@@ -16,7 +16,7 @@ body {
 	line-height: 2.85rem;
 	overflow-x: hidden;
 	overflow-y: auto;
-	background-image: url('image/family_bike.jpg');
+	background-image: url('//image/family_bike.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -35,11 +35,11 @@ a.button:hover{
 	color:#FFF;
 }
 body.home_2 {
-	background-image: url('image/grandfather_daughter.jpg');
+	background-image: url('//image/grandfather_daughter.jpg');
 }
 
 body.home_3 {
-	background-image: url('image/happycouple.jpg');
+	background-image: url('//image/happycouple.jpg');
 }
 
 .wrapper {
