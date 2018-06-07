@@ -5,7 +5,8 @@
 	font-family: Bitter;
 	src: url('https://touchcatdigital.github.io/touchcatidigital.github.io/font/bitter-regular.otf');
 }
-html{
+
+html {
 	font-family: Bitter, Helvetica, Arial, sans-serif;
 }
 
@@ -18,7 +19,6 @@ body {
 	line-height: 2.85rem;
 	overflow-x: hidden;
 	overflow-y: auto;
-	background-image: url('https://touchcatdigital.github.io/touchcatidigital.github.io/image/family_bike.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -36,18 +36,21 @@ h1 {
 	text-transform: uppercase;
 	text-shadow: 2px 2px #121212;
 }
-.button{
-	padding:25px 50px;
+
+.button {
+	padding: 25px 50px;
 }
+
 .button_container {
 	margin: 20px 0;
 }
+
 a.button:hover {
 	color: #FFF;
 }
 
 body.home_1 {
-	background-image: url('../image/family_bike.jpg');
+	background-image: url('https://touchcatdigital.github.io/touchcatidigital.github.io/image/family_bike.jpg');
 }
 
 body.home_2 {
@@ -56,7 +59,6 @@ body.home_2 {
 
 body.home_3 {
 	background-image: url('https://touchcatdigital.github.io/touchcatidigital.github.io/image/happycouple.jpg');
-	background-image: url('../image/grandfather_daughter.jpg');
 }
 
 body.home_3 {
@@ -65,7 +67,6 @@ body.home_3 {
 
 body.pushed {
 	background-image: none;
-
 }
 
 .wrapper {
@@ -120,6 +121,8 @@ body.pushed {
 
 .site_logo img {
 	width: 200px;
+	position: relative;
+	z-index: 2;
 }
 
 .banner_image {
@@ -127,6 +130,11 @@ body.pushed {
 	height: 420px;
 	margin: 0 auto;
 	color: white;
+}
+
+.banner_image h1{
+	position: relative;
+	z-index: 2;
 }
 
 .banner_image.about_us_banner {
@@ -137,6 +145,14 @@ body.pushed {
 .banner_image.contact_us {
 	background-image: url('../image/contactus_cropped2.jpg');
 	background-position: center 70%;
+}
+
+.overlay {
+	position: absolute;
+	background-color: rgba(20, 20, 20, 0.6);
+	width: 100%;
+	height: 420px;
+	z-index: 1;
 }
 
 /*FOOTER*/
@@ -267,7 +283,7 @@ a:hover {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 100%;
+	width: 65%;
 }
 
 /*About Us Page */
@@ -325,7 +341,7 @@ a:hover {
 
 .wrapper.pushed .site_logo {
 	margin: 0 50px;
-	padding: 50px 0;
+	padding: 20px 0;
 }
 
 h1.pushed {
@@ -377,12 +393,16 @@ h1.pushed {
 	display: inline-block;
 	list-style-type: circle;
 	margin: 20px 20px;
-	padding: 0 0 200px;
+}
+
+.left_pane h3 {
+	padding: 50px 0 0;
 }
 
 .contact_us_form>.main_pane {
-	text-align: center;
 	width: 65%;
+	padding: 0;
+	border: solid 2px #121212;
 	background-color: #FFF;
 }
 

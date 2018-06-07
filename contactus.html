@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
-	<title>Net Worth Employee Benefits</title>
+	<title>Contact Us</title>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
 	<link rel="preload" href="font/bitter-regular.otf" type="font/otf" as="font">
 	<link href="css/tblib.min.css" rel="stylesheet" type="text/css">
 	<link href="css/site.css" rel="stylesheet" type="text/css">
-	<meta charset="UTF-8"> 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="home_1">
-	<header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="header">
+<body itemscope itemtype="http://schema.org/WebPage">
+	<header role="banner" itemscope itemtype="http://schema.org/WPHeader" class="header pushed">
 		<div class="main_navigation clearfix">
 			<nav role="navigation" class="float_right" itemscope itemtype="http://schema.org/SiteNavigationElement" tbvar="page:global_nav">
 				<ul class="menu_nav clearfix">
@@ -22,7 +24,7 @@
 						</a>
 					</li>
 					<li itemprop="name" class="menu_nav_item">
-						<a itemprop="url" class="menu_nav_text" href="~~~/contact-us">
+						<a itemprop="url" class="menu_nav_text selected" href="~~~/contact-us">
 							<tblang>CONTACT US</tblang>
 						</a>
 					</li>
@@ -54,22 +56,67 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="wrapper">
-		<div class="site_logo" tbvar="site:header_logo">
-			<a itemprop="url" href="~~~">
-				<img itemprop="image" src="image/2_net_worth_logo.png" alt="Net Worth Employee Benefits Logo" />
-			</a>
-		</div>
-		<section role="main" class="page_content span_1_of_2 float_left opacity_fade" tbvar="page:view" id="page_content">
-			<h1>Welcome to our Website</h1>
-			<div class="line"></div>
-			<p>Net Worth Employee Benefits Inc. specializes in the design and administration of employee benefits programs for clients
-				and their employees. We provide customized, sound and affordable benefits coverage that strikes a balance between employee
-				satisfaction and employer cost containment.</p>
-			<div class="button_container">
-				<a class="button" role="button" href="#">
-					<tblang>FIND OUT MORE</tblang>
+	<div class="wrapper pushed">
+		<div class="banner_image contact_us">
+			<div class="overlay"></div>
+			<div class="site_logo" tbvar="site:header_logo">
+				<a itemprop="url" href="~~~">
+					<img itemprop="image" src="image/2_net_worth_logo.png" alt="Net Worth Employee Benefits Logo" />
 				</a>
+			</div>
+			<h1 class="pushed">Contact Us</h1>
+		</div>
+		<section role="main" class="page_content opacity_fade" tbvar="page:view" id="page_content">
+			<div class="contact_us_form">
+				<div class="left_pane float_left">
+					<h3>Net Worth Employee Benefits Inc.</h3>
+					<div class="line"></div>
+					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						<ul>
+							<li>
+								<span itemprop="streetAddress">1567 Bloor Street West</span>
+								<span itemprop="addressLocality">Toronto</span>,
+								<span itemprop="addressRegion">ON</span>
+								<span itemprop="postalCode">M6P1A4</span>
+							</li>
+							<li>
+								<span itemprop="telephone">
+									<a class="link_color" href="tel:416-588-2808">416-588-2808</a>
+								</span>
+								<br>
+								<span itemprop="telephone"></span>
+								<a class="link_color" href="tel:1-866-258-4788">Toll Free: 1-866-258-4788</a>
+								</span>
+							</li>
+							<li>
+								<span itemprop="email">
+									<a class="link_color" href="mailto:networth@look.ca"> networth@look.ca</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<h3>Al Kaminskas</h3>
+					<div class="line"></div>
+					<ul>
+						<li>Employee Benefits Specialist</li>
+						<li>Ext. 23</li>
+					</ul>
+					<h3>Dave Wills</h3>
+					<div class="line"></div>
+					<ul>
+						<li>Employee Benefits Specialist</li>
+						<li>Ext. 25</li>
+					</ul>
+					<h3>Marius Rusinas CFP, CLU</h3>
+					<div class="line"></div>
+					<ul>
+						<li>Account Executive</li>
+						<li>Ext. 26</li>
+					</ul>
+				</div>
+				<div class="main_pane float_right">
+					<div id='map'></div>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -104,6 +151,15 @@
 	</footer>
 	<script defer type="text/javascript" src="js/tblib-b.min.js"></script>
 	<script defer type="text/javascript" src="js/site.js"></script>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hY3BoZXJzb24iLCJhIjoiY2phZDN3M3d6MGZ0eTJxbnF5aTJja2l1bCJ9.xca9fm15JRJVlAzfRop7wQ';
+		var map = new mapboxgl.Map({
+			container: 'map', // container id
+			style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+			center: [-74.50, 40], // starting position [lng, lat]
+			zoom: 9 // starting zoom
+		});
+	</script>
 </body>
 
 </html>
