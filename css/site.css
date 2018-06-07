@@ -36,17 +36,11 @@ h1 {
 	text-transform: uppercase;
 	text-shadow: 2px 2px #121212;
 }
-
-.button_container {
-	margin-top: 10px;
+.button{
+	padding:25px 50px;
 }
-
-a.button:hover {
-	color: #FFF;
-}
-
 .button_container {
-	margin-top: 20px;
+	margin: 20px 0;
 }
 
 a.button:hover {
