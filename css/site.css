@@ -1,5 +1,6 @@
 @charset "utf-8";
 /*Site Classes*/
+
 @font-face {
 	font-family: Bitter;
 	src: url('https://touchcatdigital.github.io/touchcatidigital.github.io/font/bitter-regular.otf');
@@ -7,9 +8,10 @@
 html{
 	font-family: Bitter, Helvetica, Arial, sans-serif;
 }
+
 body {
 	background-color: #F1F1F1;
-	color: #FFF;	
+	color: #FFF;
 	font-size: 1.615em;
 	font-size: 1.615rem;
 	line-height: 2.85em;
@@ -25,26 +27,57 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
-.button_container{
-	margin-top:10px;
+
+h1, h2, h3, h4 {
+	font-family: Bitter, Helvetica, Arial, sans-serif;
 }
-.button{
-	padding:25px;
+
+h1 {
+	text-transform: uppercase;
+	text-shadow: 2px 2px #121212;
 }
-a.button:hover{
-	color:#FFF;
+
+.button_container {
+	margin-top: 10px;
 }
+
+a.button:hover {
+	color: #FFF;
+}
+
+.button_container {
+	margin-top: 20px;
+}
+
+a.button:hover {
+	color: #FFF;
+}
+
+body.home_1 {
+	background-image: url('../image/family_bike.jpg');
+}
+
 body.home_2 {
 	background-image: url('https://touchcatdigital.github.io/touchcatidigital.github.io/image/grandfather_daughter.jpg');
 }
 
 body.home_3 {
 	background-image: url('https://touchcatdigital.github.io/touchcatidigital.github.io/image/happycouple.jpg');
+	background-image: url('../image/grandfather_daughter.jpg');
+}
+
+body.home_3 {
+	background-image: url('../image/happycouple.jpg');
+}
+
+body.pushed {
+	background-image: none;
+
 }
 
 .wrapper {
+	padding: 0 50px;
 	background-color: rgba(20, 20, 20, 0.4);
-	padding: 5px 50px;
 }
 
 /*HEADER*/
@@ -83,14 +116,38 @@ body.home_3 {
 }
 
 .menu_nav_item {
-	margin-right:30px;
+	margin-right: 30px;
 	position: relative;
 }
 
-.site_logo img{
-	width:200px;
+.site_logo {
+	height: auto;
+	margin: 25px 0;
 }
+
+.site_logo img {
+	width: 200px;
+}
+
+.banner_image {
+	background-position: center;
+	height: 420px;
+	margin: 0 auto;
+	color: white;
+}
+
+.banner_image.about_us_banner {
+	background-image: url('../image/cropped_aboutus3.jpg');
+	background-position: center 60%;
+}
+
+.banner_image.contact_us {
+	background-image: url('../image/contactus_cropped2.jpg');
+	background-position: center 70%;
+}
+
 /*FOOTER*/
+
 .address_bar {
 	margin-top: 8px;
 	line-height: 2em;
@@ -155,8 +212,12 @@ a:hover {
 
 .page_content {
 	opacity: 0;
-	width: 50%;
+	text-align: center;
 	text-shadow: 2px 2px #121212;
+}
+
+.page_content h1 {
+	margin: 20px 0;
 }
 
 .load {
@@ -164,10 +225,10 @@ a:hover {
 }
 
 .opacity_fade {
-	-ms-transition-duration:750ms;
-	-moz-transition-duration:750ms;
-	-webkit-transition-duration:750ms;
-	transition-duration:750ms;
+	-moz-transition-duration: 750ms;
+	-webkit-transition-duration: 750ms;
+	-o-transition-duration: 750ms;
+	transition-duration: 750ms;
 }
 
 @keyframes fadein {
@@ -209,44 +270,132 @@ a:hover {
 	}
 }
 
-.page_content>h1 {
-	margin-top: 20px;
-	text-align: center;
-	font-weight: bold;
-	text-transform: uppercase;
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
 }
 
-.page_content>h2 {
-	font-weight: 100;
+/*About Us Page */
+
+.about_us {
+	background-color: #FFF;
+	color: #121212;
+	text-shadow: none;
+	padding: 100px;
+	width: 100%;
 	font-size: 1.5em;
 	font-size: 1.5rem;
+	margin: 0 auto;
+}
+
+.about_us>h2 {
+	font-weight: 100;
+	font-size: 1.8em;
+	font-size: 1.8rem;
 	letter-spacing: 5px;
-	margin: 10px auto;
-	color: #DEB406;
+	width: 35%;
+	margin: 30px auto;
+	color: #121212;
+	border-bottom: solid 2px #DEB406;
 	text-transform: uppercase;
 }
 
-.page_content>p {
+.about_us>p {
 	text-align: justify;
-	font-size: 1.8em;
-	font-size: 1.8rem;
 	line-height: 2.6em;
 	line-height: 2.6rem;
 }
 
-.page_content>ul {
+.about_us>ul {
+	display: inline-block;
+	text-align: left;
 	list-style: circle;
-	font-size: 1.2em;
-	font-size: 1.2rem;
+	width: 100%;
 	padding: 0 50px;
 	margin: 10px auto;
 }
 
-.page_content>.line {
+.about_us>.line {
 	border-bottom: solid #009DDC;
 	width: 300px;
 	margin: 2.5px auto 20px;
 	padding: 0;
+}
+
+/*Contact Us Page*/
+
+.wrapper.pushed {
+	padding: 0;
+}
+
+.wrapper.pushed .site_logo {
+	margin: 0 50px;
+	padding: 50px 0;
+}
+
+h1.pushed {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.contact_us_form {
+	width: 100%;
+	color: #121212;
+	text-shadow: none;
+	text-align: left;
+	overflow: hidden;
+}
+
+.contact_us_form>.left_pane, .contact_us_form>.main_pane {
+	padding: 200px 50px 100%;
+	margin-bottom: -100%;
+}
+
+.contact_us_form>.left_pane {
+	width: 35%;
+	background-color: #D9D9D9;
+}
+
+.contact_us_form>.left_pane.h3 {
+	font-size: 1.2em;
+	font-size: 1.2rem;
+}
+
+.left_pane .line, .main_pane .line {
+	border-bottom: solid 1px #121212;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.left_pane .line {
+	width: 50px;
+}
+
+.main_pane .line {
+	width: 150px;
+	margin: 0 auto;
+}
+
+.left_pane ul {
+	text-align: left;
+	display: inline-block;
+	list-style-type: circle;
+	margin: 20px 20px;
+	padding: 0 0 200px;
+}
+
+.contact_us_form>.main_pane {
+	text-align: center;
+	width: 65%;
+	background-color: #FFF;
+}
+
+.main_pane p {
+	margin: 20px auto;
+	font-size: .8em;
 }
 
 /*RESPONSIVE*/
@@ -273,7 +422,7 @@ a:hover {
 }
 
 .hamburger_menu {
-	margin: 15px 0	;
+	margin: 15px 0;
 }
 
 .mobile_nav .menu_nav {
@@ -326,8 +475,12 @@ a:hover {
 	visibility: hidden;
 }
 
+.span_1_of_2 {
+	width: 50%;
+}
+
 @media only screen and (max-width: 998px) {
-	body{
+	body {
 		background-position: center right;
 	}
 	.main_navigation {
@@ -346,13 +499,12 @@ a:hover {
 	.page_content>.line {
 		width: 100px;
 	}
-	.address_bar{
+	.address_bar {
 		float: none;
 		text-align: center;
 	}
-	.copyright_text{
+	.copyright_text {
 		float: none;
 		text-align: center;
 	}
-	
 }
