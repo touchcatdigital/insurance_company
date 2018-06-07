@@ -35,21 +35,12 @@ h1 {
 	text-transform: uppercase;
 	text-shadow: 2px 2px #121212;
 }
-
-.button_container {
-	margin-top: 10px;
-}
-
-a.button:hover {
-	color: #FFF;
-}
-
-.button {
-	padding: 20px;	
+.button{
+	padding:25px 50px;
 }
 
 .button_container {
-	margin-top: 20px;
+	margin: 20px 0;
 }
 
 a.button:hover {
