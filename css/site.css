@@ -132,7 +132,7 @@ body.pushed {
 	color: white;
 }
 
-.banner_image h1{
+.banner_image h1 {
 	position: relative;
 	z-index: 2;
 }
@@ -220,13 +220,16 @@ a:hover {
 }
 
 .page_content {
-	opacity: 0;
 	text-align: center;
 	text-shadow: 2px 2px #121212;
 }
 
 .page_content h1 {
 	margin: 20px 0;
+}
+
+.will_fade {
+	opacity: 0;
 }
 
 .load {
@@ -279,11 +282,19 @@ a:hover {
 	}
 }
 
+map_box {
+	display: inline-block;
+	height: 500px;
+}
+
 #map {
 	position: absolute;
-	top: 0;
+	text-align: left;
+	top: 35%;
 	bottom: 0;
-	width: 65%;
+	width: 60%;
+	height: 60%;
+	border: solid 2px #121212;
 }
 
 /*About Us Page */
@@ -400,15 +411,14 @@ h1.pushed {
 }
 
 .contact_us_form>.main_pane {
+	text-align: center;
 	width: 65%;
-	padding: 0;
-	border: solid 2px #121212;
 	background-color: #FFF;
 }
 
-.main_pane p {
-	margin: 20px auto;
-	font-size: .8em;
+.main_pane h3 {
+	margin: 20px auto 10px;
+	border-bottom: solid 2px #121212;
 }
 
 /*RESPONSIVE*/
