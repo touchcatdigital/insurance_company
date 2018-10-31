@@ -24,7 +24,7 @@ if(typeof mapboxgl!=='undefined'){
 	var map = new mapboxgl.Map({
 		container: 'map', // container id
 		style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
-		center: [-79.454126, 43.655839], // starting position [lng, lat]
+		center: [-79.396454, 43.704944], // starting position [lng, lat]
 		zoom: 15 // starting zoom
 	});
 
@@ -40,7 +40,7 @@ if(typeof mapboxgl!=='undefined'){
 					type: "geojson",
 					data: {
 						type: "FeatureCollection",
-						features: [{ "type": "Feature", "geometry": { "type": "Point", "coordinates": ["-79.454126", "43.655839"] } }]
+						features: [{ "type": "Feature", "geometry": { "type": "Point", "coordinates": ["-79.396454", "43.704944"] } }]
 					}
 				},
 				layout: {
